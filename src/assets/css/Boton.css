@@ -1,0 +1,22 @@
+.container__boton__crear__and__limpiar{
+   
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 10px; /* Añade un espacio entre los botones si lo deseas */
+
+
+}
+
+.boton__crear__and__limpiar{
+    width: 100px;
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 15px; 
+
+}
+

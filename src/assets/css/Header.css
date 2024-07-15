@@ -1,0 +1,43 @@
+.container__header {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    align-items: center;
+    padding: 0px 20px;
+    background-image: url('../img/header.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Ajusta según tus necesidades */
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.container__header div {
+    margin-top: 20px;
+}
+
+.container__home__and__new__video {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px; /* Ajusta según tus necesidades */
+}
+
+.logo {
+    width: 280px;
+    height: 116px;
+}
+
+a {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: brown;
+}

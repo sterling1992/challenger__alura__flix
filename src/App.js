@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Home from '../src/components/Home.js';
+import FormNewVideo from './components/FormNewVideo.js';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+
 
 function App() {
+  // Paa el almacenamiento de los nuevos videos
+  const [videos, setVideos] = useState([]);
+  //Actualización del estado de los videos añadienod un nuevo video
+  const agregarVideo = (nuevoVideo) => {
+    setVideos([...videos, nuevoVideo]);
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path = '/' element = { <Home />}/>
+        <Route path = '/home' element = { <Home />}/>
+        <Route path = '/crear-nuevo-video' element = { <FormNewVideo onAgregarVideo={agregarVideo}/>}/>
+      </Routes>
+    </Router>
   );
 }
 
