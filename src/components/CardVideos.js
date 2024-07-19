@@ -3,18 +3,21 @@ import React from "react";
 
 const CardVideos = ({linkVideo, tituloVideo, categoriaVideo, autorVideo, descripcionVideo} ) =>{
 
-  const [getData, setGetData] = useState({
-
-
-
-  });
-
+  // Estracción del ID del video de Yputube del enlace proporcionado
+  const videoId = linkVideo.split('v=')[1];
 
     return(
       <div className="card__container__video">
-         <div className="container__video">
-         <iframe src={linkVideo} title={tituloVideo} width="100%" height="200" frameBorder="0" allowFullScreen></iframe>
-          </div>                      
+        <div className="container__video">
+          <iframe
+            width="100%" 
+            height="200" 
+            src = {`https://www.youtube.com/embed/${videoId}`}
+            title={tituloVideo}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>                      
          <div className="container__title__video">
           {tituloVideo}
          </div>

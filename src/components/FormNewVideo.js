@@ -34,10 +34,10 @@ const  FormNewVideo = ({ onAgregarVideo }) => {
         },
         body: JSON.stringify(formData)
       });
-
       if(response.ok){
         const nuevoVideo = await response.json();
-        console.log("Video guardad:",nuevoVideo );
+        onAgregarVideo(nuevoVideo);
+        //console.log("Video guardad:",nuevoVideo );
         handleReset(); //se limpia el formulario
       }else{
         console.error("Error al guardar el video:", response.statusText);        

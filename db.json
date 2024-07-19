@@ -23,6 +23,46 @@
       "imagen": "",
       "linkVideo": "https://www.youtube.com/watch?v=ivdTnPl1ND0",
       "descriptionVideo": "Curso de javascript para principiantes desde cero"
+    },
+    {
+      "id": "c470",
+      "titulo": "Prueba Videos Klever",
+      "categoria": "Backend",
+      "autor": "Klever Arrechea",
+      "linkVideo": "https://www.youtube.com/",
+      "descriptionVideo": "Prueba de conexión de videos"
+    },
+    {
+      "id": "57ff",
+      "titulo": "Programación Orientada a Objeto \"CCTET\"",
+      "categoria": "IoT",
+      "autor": "CCTET",
+      "linkVideo": "https://www.youtube.com/watch?v=VobYZbzTXzc&t=25s",
+      "descriptionVideo": "Sensor HCS-R04 con arduino para control de nivel de agua de tanques."
+    },
+    {
+      "id": "cf79",
+      "titulo": "Ultimo Video",
+      "categoria": "Arquitectura-Nube",
+      "autor": "Klever and CCTET",
+      "linkVideo": "https://www.youtube.com/watch?v=9xMqqb01vrw",
+      "descriptionVideo": "Klever y cctet hacen video juntos"
+    },
+    {
+      "id": "ebdf",
+      "titulo": "Prueba FInal ",
+      "categoria": "Arquitectura-Nube",
+      "autor": "CCTET GUAPI",
+      "linkVideo": "https://www.youtube.com/watch?v=9xMqqb01vrw",
+      "descriptionVideo": "jsjsjsjsj"
+    },
+    {
+      "id": "7da7",
+      "titulo": "CELULARES NUEVOS Y USADOS DE CCTET",
+      "categoria": "Data-Science",
+      "autor": "Jeison Hamilton",
+      "linkVideo": "https://www.youtube.com/watch?v=eCe9A9wq4Go",
+      "descriptionVideo": "Prueba "
     }
   ]
 }
