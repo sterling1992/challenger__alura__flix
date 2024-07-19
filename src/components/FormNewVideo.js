@@ -4,7 +4,7 @@ import "../assets/css/FormNewVideo.css";
 import Boton from "./Boton";
 import Footer from "./Footer";
 
-const  FormNewVideo = ({ onAgregarVideo }) => {
+const FormNewVideo = ({ onAgregarVideo }) => {
 
   const [formData, setFormData] = useState({
     titulo: "",
@@ -26,7 +26,7 @@ const  FormNewVideo = ({ onAgregarVideo }) => {
 
     //Coneción con la API 
 
-    try{
+    try {
       const response = await fetch("http://localhost:5000/videos", {
         method: "POST",
         headers: {
@@ -34,15 +34,15 @@ const  FormNewVideo = ({ onAgregarVideo }) => {
         },
         body: JSON.stringify(formData)
       });
-      if(response.ok){
+      if (response.ok) {
         const nuevoVideo = await response.json();
-        onAgregarVideo(nuevoVideo);
+        onAgregarVideo(nuevoVideo); // Actualiza la lista de vidoes en el componente respectivo
         //console.log("Video guardad:",nuevoVideo );
         handleReset(); //se limpia el formulario
-      }else{
-        console.error("Error al guardar el video:", response.statusText);        
+      } else {
+        console.error("Error al guardar el video:", response.statusText);
       }
-    }catch(error){
+    } catch (error) {
       console.error("Error de red al guardar el video:", error);
     }
   };
@@ -112,7 +112,7 @@ const  FormNewVideo = ({ onAgregarVideo }) => {
               name="autor"
               value={formData.autor}
               onChange={handleChange}
-              
+
             />
           </div>
         </div>
@@ -159,7 +159,7 @@ const  FormNewVideo = ({ onAgregarVideo }) => {
       <Footer />
     </form>
 
-    
+
   );
 };
 
