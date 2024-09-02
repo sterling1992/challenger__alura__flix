@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CardVideos from "./CardVideos";
-
+import "../../src/assets/css/MostrarVideos.css";
 
 const MostrarVideo = () => {
   const [videos, setVideos] = useState([]);
@@ -31,8 +31,8 @@ const MostrarVideo = () => {
           <CardVideos
             key={index}
             linkVideo={video.linkVideo}
-            tituloVideo={video.titulo}
-            categoriaVideo={video.categoria}
+            tituloVideo= {video.titulo}
+            categoriaVideo = {video.categoria}
             autorVideo={video.autor}
             descripcionVideo={video.descripcionVideo}
           />

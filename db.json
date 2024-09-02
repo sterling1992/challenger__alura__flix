@@ -63,6 +63,30 @@
       "autor": "Jeison Hamilton",
       "linkVideo": "https://www.youtube.com/watch?v=eCe9A9wq4Go",
       "descriptionVideo": "Prueba "
+    },
+    {
+      "id": "b9de",
+      "titulo": "IoT Como tecnología Para el Desarrollo Social En Comunidades Étnicas Dispersas",
+      "categoria": "IoT",
+      "autor": "Klever Arrechea Castillo",
+      "linkVideo": "https://www.youtube.com/watch?v=6mBO2vqLv38",
+      "descriptionVideo": "IoT en comunidades dispersas"
+    },
+    {
+      "id": "cf61",
+      "titulo": "IoT Como tecnología Para el Desarrollo Social En Comunidades Étnicas Dispersas IoT Como tecnología Para el Desarrollo Social En Comunidades Étnicas Dispersas",
+      "categoria": "IoT",
+      "autor": "CCTET",
+      "linkVideo": "https://www.youtube.com/watch?v=6mBO2vqLv38",
+      "descriptionVideo": "Pruebas 2"
+    },
+    {
+      "id": "510a",
+      "titulo": "Klever",
+      "categoria": "",
+      "autor": "Willi",
+      "linkVideo": "https://www.youtube.com/watch?v=zVkuzqzVWs0&list=RDzVkuzqzVWs0&start_radio=1",
+      "descriptionVideo": ""
     }
   ]
 }
